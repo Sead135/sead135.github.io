@@ -1,0 +1,570 @@
+/* MMenu NASKA 2020 */
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    border: 0;
+    font-family: verdana, tahoma, sans-serif;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section 
+{
+    display: block;
+}
+
+.site-header 
+{
+    position: relative;
+    padding: 10px 40px 10px;
+    margin: 0 auto;
+    max-width: 1430px;
+    text-align: center;
+    min-height: 134px;
+    z-index: 18003;
+}
+
+.grid-naska 
+{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.site-logo 
+{
+    text-align: left;
+    margin: 0px 0px 0px calc(50% - 311px) !important;
+    position: relative;
+}
+
+.site-logo img 
+{
+    text-align: center;
+}
+
+a
+{
+    outline: 0;
+    text-decoration: none;
+}
+
+a.a-mail, a.a-mail:link, a.a-mail:visited, a.a-mail:active 
+{
+    color: darkblue;
+}
+
+a img 
+{
+    border: 0;
+}
+
+img 
+{
+    height: auto;
+    max-width: 100%;
+}
+
+.firm-name 
+{
+    display: inline-block;
+    color: #E78700;
+    font-family: verdana, tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: left;
+    height: 102px;
+    line-height: 51px;
+    vertical-align: middle;
+    position: absolute;
+    left: 79px;
+    top: 0;
+}
+
+.site-description 
+{
+    color: white !important;
+    height: 0px !important;
+}
+
+.site-description 
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #999;
+    margin-top: -5px;
+    z-index: -1;
+    position: absolute;
+    top: -1000px;    
+}
+
+.contact-button 
+{
+    position: absolute;
+    top: 34px;
+    left: 40px;
+}
+
+.contact-button button 
+{
+    padding: 10px 11.5px;
+    border-radius: 3px;
+    background: #FFF;
+    border-color: #ff653a;
+    border-width: 1px;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.contact-button button:hover 
+{
+    background: #ff653a;
+    border-color: #ff653a;
+    outline: none !important;
+}
+
+.contact-button button:hover > i.fa 
+{
+    color: #fff;
+}
+.cbp-spmenu, .push-body 
+{
+    transition: all 0.3s ease;
+}
+
+.push-body 
+{
+    /*overflow-x: hidden;*/
+    position: relative;
+    left: 0;
+}
+
+.contact-button button > i.fa 
+{
+    font-size: 21px;
+    color: #ff653a;
+}
+
+.top-contacts 
+{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    color: #999;
+    text-align: right;
+    z-index: 1;
+}
+
+.top-contacts .header 
+{
+    height: 43px;
+}
+
+.flag-active 
+{
+    border-left: 1px solid rgba(255, 183, 23, 0.67);
+    border-right: 1px solid rgba(255, 183, 23, 0.67);
+    border-top: 1px solid rgba(255, 183, 23, 0.67);
+    background-color: rgb(251, 245, 232);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.flag 
+{
+    display: inline-block;
+    text-align: center;
+    width: 55px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.flag-active img 
+{
+    opacity: 1 !important;
+}
+
+.flag img 
+{
+    opacity: 0.2;
+    transition: ease-in-out 0.5s;
+    position: relative;
+    top: -3px;
+}
+
+.phone-block 
+{
+    text-align: center;
+    border: 1px solid rgba(255, 183, 23, 0.67);
+    position: relative;
+    top: -1px;
+    z-index: -1;
+    background-color: rgb(251, 245, 232);
+    border-radius: 3px;
+    height: 50px;
+}
+
+.phone-active 
+{
+    display: inline-block !important;
+}
+
+.phone 
+{
+    width: 100%;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    display: none;
+    line-height: 16px;
+}
+
+.p-left 
+{
+    float: left;
+    margin-left: 10px;
+}
+
+.p-right 
+{
+    float: right;
+    margin-right: 10px;
+}
+
+/*Left menu*/
+.menu-open 
+{
+    left: 0px !important;
+    overflow: hidden;
+}
+
+.cbp-spmenu, .push-body 
+{
+    transition: all 0.3s ease;
+}
+
+.cbp-spmenu
+{
+    left: -240px;
+}
+.cbp-spmenu-vertical 
+{
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 28003;
+    overflow-y: auto;
+}
+.cbp-spmenu 
+{
+    background: #222;
+    position: fixed;
+}
+
+.cbp-spmenu h3 
+{
+    color: #ededed;
+    font-size: 15px !important;
+    padding: 14px 20px;
+    margin: 0;
+    font-weight: 600;
+    background: #000;
+    cursor: pointer;
+    font-family: verdana, tahoma, sans-serif !important;
+}
+
+.cbp-spmenu ul 
+{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cbp-spmenu ul li 
+{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.cbp-spmenu-vertical a 
+{
+    padding: 8px 1em;
+}
+
+.cbp-spmenu a 
+{
+    display: block;
+    color: #ccc !important;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: verdana, tahoma, sans-serif !important;
+}
+
+.cbp-spmenu a:hover 
+{
+    background-color: #F0AA1D;
+    color: #000000 !important;
+    text-decoration: underline !important;
+}
+
+.cbp-spmenu ul.sub-menu 
+{
+    background: #333;
+    padding: 
+}
+
+.cbp-spmenu ul.sub-menu li a 
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    padding: 3px 2.5em;
+    font-family: verdana, tahoma, sans-serif !important;
+    color: #fff !important;    
+}
+
+.cbp-spmenu ul.sub-menu li a:hover
+{
+    color: #000000 !important;
+    text-decoration: underline !important;
+}
+
+.push-body-toright 
+{
+    left: 240px;
+    overflow-x: hidden;
+}
+
+/* main menu */
+.navigation-new 
+{
+    width: 100%;
+    height: 10px;
+    background-color: #FF8A0C;
+}
+
+.navigation-new, .nav-g 
+{
+    z-index: 18028;
+    position: relative;
+}
+
+.nav-g 
+{
+    overflow: visible;
+}
+
+.navigation-new, .nav-g 
+{
+    z-index: 18028;
+    position: relative;
+}
+
+.grid-pad 
+{
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.grid 
+{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 755px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.razdel 
+{
+    color: white;
+    text-align: center;
+    background: url(../../img/three-new-o.png) no-repeat 50% 0px;
+    z-index: 18000;
+    height: 110px;
+    font-size: 15pt;
+    vertical-align: middle;
+    line-height: 55px;
+    padding-right: 0px;
+}
+
+.razdel:hover {
+    background: url(../../img/three-new1.png) no-repeat 50% 0px;
+}
+
+.razdel-active {
+    background: url(../../img/three-new1.png) no-repeat 50% 0px;
+}
+
+.col-1-4, .col-3-12 {
+    width: 25%;
+}
+
+[class*="col-"] {
+    float: left;
+    /*padding-right: 40px;*/
+}
+
+/* mobile view */
+ @media screen and (max-width: 800px) 
+ {
+ 	body
+ 	{
+ 		padding-top: 0;
+ 	}
+
+	.site-logo img {
+	    margin-left: 0px !important;
+	    width: auto !important;
+	    height: auto !important;
+	}
+
+	.site-logo
+	{
+	    margin-left: 55px !important;
+	    top: 2px;
+	    position: absolute;
+	    width: calc(100% - 55px) !important;
+	}
+
+	.contact-button {
+        position: absolute;
+        top: 10px !important;
+        left: 10px !important;
+	}
+
+	.navigation-new 
+	{
+	    width: 100%;
+	    height: auto;
+	    background-color: #7B5D3C;
+	}
+
+	.grid-pad 
+	{
+	    padding: 0px;
+	}
+
+	.grid-pad a
+	{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+	}
+
+	.col-1-4, .col-3-12 {
+    	width: 100%;
+	}
+
+	.top-contacts
+	{
+		display: none;
+	}
+
+	.firm-name {
+	    /*font-size: 14pt !important;*/
+        font-size: 4.5vw !important;
+        line-height: 20pt !important;
+        padding: 0 !important;
+        width: calc(100% - 81px) !important;
+        word-wrap: break-word !important;
+	}
+	
+	.razdel {
+        background: #bd741e;
+        height: 50px;
+        margin: unset;
+	}
+
+	.razdel:hover {
+	    background: #FF8A0C;
+	}
+
+	.razdel-active {
+	    background: #FF8A0C;
+	}
+
+	.grid-pad {
+	    display: block;
+	    width: 100%;
+	    height: auto;
+	}
+
+	.grid 
+	{
+	    width: 100%;
+	    max-width: 100%;
+	    min-width: 100%;
+	    margin: unset;
+	    overflow: hidden;
+        line-height: normal;
+	}
+
+    .site-header 
+    {
+        padding: 0 !important;
+    }
+
+
+ }
+
+@media screen and (max-width: 350px) 
+ {
+    .firm-name {
+        font-size: 14px !important;
+    }
+
+    .site-branding {
+        margin-bottom: 0px !important;
+    }
+
+ } 
+
+.fa-remove::before, .fa-close::before, .fa-times::before {
+    content: "\f00d";
+}
+
+html
+{
+    overflow-x: hidden !important;
+}
+
+.msg-title
+{
+    font-size: 22pt;
+    color: darkorange;
+    font-weight: bold;
+    font-family: verdana, sans-serif;
+}
+
+.msg-text
+{
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.msg-tab
+{
+    columns: 70px 5;
+}
+
+.msg-tab-td img
+{
+    width: 100px;
+    text-align: center;
+}
+
